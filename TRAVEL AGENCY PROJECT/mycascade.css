@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: thefont ;
+    src: url(/Fonts/CFMargaritaDemo-Regular.ttf);
+}
+
+.text-typing {
+  padding-left:10px;
+  font-size:35px;
+  font-family: thefont ;
+  font-weight: bolder;
+  color: aliceblue;
+}
+.text-typing p {
+  margin:0px;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:typing 4s steps(22,end) forwards,
+            blink 1s infinite;
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width:100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #ffffff;
+  }
+}
+#doublecontainer{
+    margin:0px;
+    height:30vh;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    background: rgba(0, 0, 0, 0.0);
+
+}
+
+@font-face{
+    font-family: usbro;
+    src: url(/Fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+}
+
+@font-face {
+    font-family: plane ;
+    src: url(/Fonts/CFMargaritaDemo-Regular.ttf);
+}
+
+#title{
+    text-align: center;
+    color: aliceblue;
+    font-family: usbro;
+    font-size: 50px;
+}
+
+@media (max-width:768px){
+    .text-typing{
+        padding-left: 5px;
+        font-size: 20px;
+    }
+
+    #title{
+        font-size: 30px;
+    }
+
+
+
+}
+
+
